@@ -8,10 +8,11 @@
 <meta name="theme-color" content="#17120f">
 <style>
 :root{--ink:#191512;--paper:#faf7f1;--cream:#efe4d2;--accent:#d78a38;--line:#ded4c7}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",sans-serif;line-height:1.8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}.safe-visual{width:100%;height:100%;min-height:260px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 35%,rgba(190,130,60,.28),transparent 40%),linear-gradient(135deg,#2b211b,#59412e 55%,#1b1714);position:relative;overflow:hidden}.safe-visual::after{content:"DEMO IMAGE";position:absolute;right:14px;bottom:12px;font:600 10px/1 Arial,sans-serif;letter-spacing:.16em;color:rgba(255,255,255,.45)}.safe-visual-inner{text-align:center;color:#fff;display:flex;flex-direction:column;align-items:center;gap:8px;padding:30px}.safe-visual-inner span{font-size:68px;line-height:1;filter:drop-shadow(0 8px 14px rgba(0,0,0,.25))}.safe-visual-inner strong{font-size:20px;letter-spacing:.08em}.safe-visual-inner small{font-size:11px;letter-spacing:.14em;color:rgba(255,255,255,.7)}.big-photo.safe-visual{min-height:480px}.hero-photo{background-position:center}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",sans-serif;line-height:1.8}
 img{width:100%;height:100%;object-fit:cover;display:block}.wrap{max-width:1180px;margin:auto;padding:0 24px}
 header{position:absolute;top:0;left:0;right:0;z-index:4;color:#fff}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;max-width:1180px;margin:auto}.logo{font-weight:800;letter-spacing:.16em}.nav a{margin-left:22px;font-size:13px;color:#fff;opacity:.9}
-.hero{height:88vh;min-height:620px;position:relative;overflow:hidden;background:#1b1714}.hero-photo{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.25)),url("https://tblg.k-img.com/restaurant/images/Rvw/295134/640x640_rect_f5d6e1f780c26a6368ca4bcdd96a0c3a.jpg");background-size:cover;background-position:center}
+.hero{height:88vh;min-height:620px;position:relative;overflow:hidden;background:#1b1714}.hero-photo{position:absolute;inset:0;background-image:radial-gradient(circle at 75% 35%,rgba(176,116,52,.35),transparent 35%),linear-gradient(135deg,#211b17,#4a3022 55%,#171311);background-size:cover;background-position:center}
 .hero-content{position:relative;z-index:2;color:#fff;max-width:1180px;margin:auto;padding:210px 24px 0}.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;opacity:.8}.hero h1{font-size:clamp(48px,8vw,92px);line-height:1.05;margin:18px 0 16px;letter-spacing:.08em}.hero p{max-width:590px;font-size:17px;color:#f2ece5}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 22px;border-radius:999px;border:1px solid rgba(255,255,255,.5);color:#fff;font-weight:700;font-size:14px}.btn.primary{background:#fff;color:#201914;border-color:#fff}.rating{display:inline-flex;gap:8px;align-items:center;margin-top:26px;font-size:14px}.rating strong{font-size:27px}
 
 section{padding:100px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}.section-head small{color:#a15e25;letter-spacing:.18em;font-weight:800}.section-head h2{font-size:clamp(30px,5vw,50px);line-height:1.2;margin:6px 0 0}.section-head p{max-width:450px;margin:0;color:#6e6258}
@@ -87,7 +88,7 @@ h1, h2, h3, .logo, .eyebrow, .btn, .rating strong,
 <section id="story"><div class="wrap">
 <div class="section-head"><div><small>THE STORY</small><h2>一番人気は、<br>とろっと広がるオムライス。</h2></div><p>千歳市公式観光サイトでも紹介されている、和洋中のメニューがそろう洋風食堂。人気のトロトロオムライスは、2種類のライスから選べるのが特徴です。</p></div>
 <div class="feature">
-<div class="big-photo"><img src="https://tblg.k-img.com/restaurant/images/Rvw/188149/01971486f1b34476c72c9fbfeccec7ac.jpg" alt="太陽の恵みのトロトロオムライス"></div>
+<div class="big-photo safe-visual"><div class="safe-visual-inner"><span>🍳</span><strong>トロトロオムライス</strong><small>料理イメージ</small></div></div>
 <div class="story"><h3>「今日は何を食べよう？」<br>そんな日に。</h3><p>オムライスだけでなく、定食、丼、フライなど幅広いメニューを楽しめるのが太陽の恵みの魅力。</p><p>一人でふらっと。家族と一緒に。千歳でのお昼ごはんにも、普段の晩ごはんにも。</p><div class="quote">リーズナブルで、ボリュームもしっかり。</div></div>
 </div>
 </div></section>
@@ -95,11 +96,11 @@ h1, h2, h3, .logo, .eyebrow, .btn, .rating strong,
 <section id="photo"><div class="wrap">
 <div class="section-head"><div><small>PHOTO</small><h2>お店の雰囲気</h2></div><p>料理だけでなく、店舗の外観や店内の雰囲気も伝わる構成に。正式公開時は、店舗から提供いただいた写真への差し替えがおすすめです。</p></div>
 <div class="gallery">
-<figure class="wide"><img src="https://tblg.k-img.com/restaurant/images/Rvw/295134/640x640_rect_f5d6e1f780c26a6368ca4bcdd96a0c3a.jpg" alt="太陽の恵み 外観"><figcaption class="caption">STORE FRONT</figcaption></figure>
-<figure><img src="https://tblg.k-img.com/restaurant/images/Rvw/348542/640x640_rect_804bdcc105990e8a19a732786432a4b1.jpg" alt="太陽の恵み 外観"><figcaption class="caption">ENTRANCE</figcaption></figure>
-<figure><img src="https://tblg.k-img.com/restaurant/images/Rvw/188149/2be6f33bccb0d54823f62f6b4da49dd7.jpg" alt="店内の様子"><figcaption class="caption">INTERIOR</figcaption></figure>
-<figure><img src="https://tblg.k-img.com/restaurant/images/Rvw/188149/01971486f1b34476c72c9fbfeccec7ac.jpg" alt="トロトロオムライス"><figcaption class="caption">OMURICE</figcaption></figure>
-<figure><img src="https://tblg.k-img.com/restaurant/images/Rvw/188149/2be6f33bccb0d54823f62f6b4da49dd7.jpg" alt="店内写真"><figcaption class="caption">ATMOSPHERE</figcaption></figure>
+<figure class="wide"><div class="safe-visual"><div class="safe-visual-inner"><span>🏠</span><strong>店舗外観</strong><small>写真準備中</small></div></div><figcaption class="caption">STORE FRONT</figcaption></figure>
+<figure><div class="safe-visual"><div class="safe-visual-inner"><span>🚪</span><strong>入口</strong><small>写真準備中</small></div></div><figcaption class="caption">ENTRANCE</figcaption></figure>
+<figure><div class="safe-visual"><div class="safe-visual-inner"><span>🪑</span><strong>店内</strong><small>写真準備中</small></div></div><figcaption class="caption">INTERIOR</figcaption></figure>
+<figure><div class="safe-visual"><div class="safe-visual-inner"><span>🍳</span><strong>トロトロオムライス</strong><small>料理イメージ</small></div></div><figcaption class="caption">OMURICE</figcaption></figure>
+<figure><div class="safe-visual"><div class="safe-visual-inner"><span>🍽️</span><strong>お店の雰囲気</strong><small>写真準備中</small></div></div><figcaption class="caption">ATMOSPHERE</figcaption></figure>
 </div>
 </div></section>
 
@@ -137,4 +138,4 @@ h1, h2, h3, .logo, .eyebrow, .btn, .rating strong,
 </footer>
 <div class="mobilebar"><a href="tel:0123273293">電話</a><a href="#menu">メニュー</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=北海道千歳市北斗1丁目20-17">地図</a></div>
 </body>
-</html>
+ </html>
